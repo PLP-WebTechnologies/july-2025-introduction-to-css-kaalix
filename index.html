@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xil'Art Sewing Workshop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to <em>Xil'Art Sewing Workshop</em></h1>
+    <p>Unleash your creativity sew, stitch, and style with us!</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <main>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Xil'Art</h2>
+      <p>Xil'Art invites all sewing enthusiasts from curious beginners to seasoned stitchers to join our hands-on workshops. Dive into techniques, collaborate with fellow creatives, and craft something beautiful.</p>
+
+      <figure>
+        <img src="https://images.pexels.com/photos/12672239/pexels-photo-12672239.jpeg" 
+             alt="Participants sewing at Xil'Art workshop" width="400">
+        <figcaption>Xil’Art workshops in action: stitch, chat, create.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule">
+      <h2>Upcoming Workshops</h2>
+      <p>Explore our upcoming sessions using different types of lists:</p>
+
+      <!-- Unordered List -->
+      <h3>Unordered List (Topics)</h3>
+      <ul>
+        <li><strong>Beginner’s Sewing Essentials</strong>: Master threading, stitching, and basic projects.</li>
+        <li><strong>Accessory Creation</strong>: Learn to make pouches, bags, and small gifts.</li>
+        <li><strong>Advanced Techniques</strong>: Expand into garment construction and pattern work.</li>
+      </ul>
+
+      <!-- Ordered List -->
+      <h3>Ordered List (Learning Path)</h3>
+      <ol>
+        <li>Start with basic hand stitching.</li>
+        <li>Move to machine sewing techniques.</li>
+        <li>Practice creating accessories.</li>
+        <li>Advance to clothing and pattern design.</li>
+      </ol>
+
+      <!-- Description List -->
+      <h3>Description List (Workshop Details)</h3>
+      <dl>
+        <dt>Beginner Essentials</dt>
+        <dd>A hands-on introduction to sewing tools and stitches.</dd>
+        <dt>Accessory Creation</dt>
+        <dd>Learn to craft stylish pouches, tote bags, and gifts.</dd>
+        <dt>Advanced Techniques</dt>
+        <dd>Master garment construction, patterns, and finishing touches.</dd>
+      </dl>
+
+      <!-- Table -->
+      <table>
+        <caption>Schedule & Pricing</caption>
+        <thead>
+          <tr><th>Workshop</th><th>Date</th><th>Duration</th><th>Fee</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Beginner Essentials</td>
+            <td>September 10, 2025</td>
+            <td>3 hours</td>
+            <td>200,000 BIF</td>
+          </tr>
+          <tr>
+            <td>Accessory Creation</td>
+            <td>September 17, 2025</td>
+            <td>4 hours</td>
+            <td>250,000 BIF</td>
+          </tr>
+          <tr>
+            <td>Advanced Techniques</td>
+            <td>September 24, 2025</td>
+            <td>5 hours</td>
+            <td>300,000 BIF</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register">
+      <h2>Register for a Workshop</h2>
+
+      <form action="#" method="post" autocomplete="on">
+        <!-- Personal Info -->
+        <fieldset>
+          <legend>Your Details</legend>
+          <p>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Irakoze Elsa" required minlength="3">
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="elsa@example.com" required>
+          </p>
+
+          <p>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+25761000001" pattern="^\+?[0-9]{8,15}$" required>
+          </p>
+
+          <p>
+            <label for="workshop">Workshop Selected:</label><br>
+            <select id="workshop" name="workshop" required>
+              <option value="">Choose a workshop</option>
+              <option value="beginner">Beginner Essentials – Sept 10</option>
+              <option value="accessory">Accessory Creation – Sept 17</option>
+              <option value="advanced">Advanced Techniques – Sept 24</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <!-- Preferences -->
+        <fieldset>
+          <legend>Preferences & Consent</legend>
+          <p>
+            <label for="experience">Sewing Experience (years):</label><br>
+            <input type="number" id="experience" name="experience" min="0" max="50" placeholder="0" required>
+          </p>
+
+          <p>
+            <label for="newsletter">Subscribe to our newsletter</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+          </p>
+
+          <p>
+            <label for="terms">I agree to the Terms & Conditions</label>
+            <input type="checkbox" id="terms" name="terms" required>
+          </p>
+        </fieldset>
+
+        <!-- Referral -->
+        <fieldset>
+          <legend>Confirmation</legend>
+          <p>
+            <label for="referral">How did you hear about us?</label><br>
+            <input type="text" id="referral" name="referral" value="Instagram Ad" readonly>
+          </p>
+
+          <p>
+            <button type="submit">Submit Registration</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Xil'Art Sewing Workshop</p>
+  </footer>
+</body>
+</html>
